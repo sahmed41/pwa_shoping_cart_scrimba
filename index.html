@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shopping charset</title>
+</head>
+<body>
+    <h1 id="mainHeading">Challenge</h1>
+    <div id="content">
+        <img src="resources\images\pngwing.com.png" alt="dog pushing a shopping cart with itmes and a baby" id="mainImg">
+        <input type="text" name="item" id="itemField">
+        <button id="addButton">Add</button>
+    </div>
+
+
+    <script>
+        const inputField = document.getElementById("itemField");
+        const addButton = document.getElementById("addButton");
+        
+        addButton.addEventListener('click', function() {
+            let item = inputField.value;
+            console.log(item);
+        })
+    </script>
+</body>
+</html>
